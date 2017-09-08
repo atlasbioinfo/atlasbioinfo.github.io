@@ -1,35 +1,39 @@
-# NexT
+# Atlas的生物信息与人工智能
 
-> 精于心，简于形
+>再复杂的理论也可以用简单的语言表示出来
 
-NexT 是由 [Hexo NexT](https://github.com/iissnan/hexo-theme-next) 移植而来的 Jekyll 主题。<!--commit: f951075d9b739d26b42472431995fa68d08796aa-->
+##简单粗暴的生物信息与人工智能理论
 
-<a href="http://simpleyyt.github.io/jekyll-theme-next/" target="_blank">在线预览 Preview</a> | <a href="http://simpleyyt.github.io" target="_blank">Yitao's Blog</a> | <a href="http://theme-next.simpleyyt.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
+我曾经看《数学之美》这本书，有段句话印象很深刻：
 
-[![Join the chat at https://gitter.im/simpleyyt/jekyll-theme-next](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jekyll-theme-next/lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+> 有不少专业术语乍一听很唬人。如果有幸遇到一个好心同时善于表达的科学家或教授，他愿意花1到2个小时的时间，深入浅出的为你讲解，你就会发现，“哦，原来是这么回事”。要是不幸遇到一个爱卖弄的，他就会很郑重的告诉你，“我在使用高深的XXX”或者我在研究“XXX相关课题”，列几个你看都不想看的极复杂公式，然后就没有下文了，如此，你除了对他肃然起敬外，不由得还会感到自卑。当然，还有好心却不善言辞的人试图讲清楚这个概念，但是他用了一些更难懂的名词，讲的云山雾罩，你发现你听了好几个小时，结果更加糊涂了，白白浪费了时间。最后你会得出这么个结论，反正我这辈子都不需要去弄懂它了。
 
-![NexT Schemes](http://iissnan.com/nexus/next/next-schemes.jpg)
+然而很不幸，我们周围很少有能像你深入浅出解释某个概念的人，但是无论是现实还是网络都充斥着故弄玄虚的人和言论，大学的大多老师都是对着PPT讲一个学期还让你学的懵懵懂懂的。
 
+所以希望我写的东西，可以用简单粗暴的方式，让你理解生信与Deep Learnings中复杂的概念。
 
-## 浏览器支持 Browser support
+##一些好书推荐
 
-![Browser support](http://iissnan.com/nexus/next/browser-support.png)
+首先倡导一下啊，我不喜欢纸质版图书，也不喜欢把资料和知识打印出来，我觉得电子版无论是查找还是储存管理都很不错，打印还会浪费木材，破坏环境。
 
+我挺喜欢看书的，如果有好一点的有意思的书，我会写出书评和推荐，希望和大家交流。当然，上面提到的《数学之美》这本书我就会推荐给大家。
 
-## 贡献 Contributing
+##爱码字的研究僧
 
-欢迎提交问题与需求，修复代码。
+博主是做生信的，最近正好在学RNN网络建模（人工智能中的人工智能神经网络，也就是深度学习，哎，这个名字好浮夸，实际理论很简单），所以会写一些东西与大家交流。
 
+如果有需要讨论或者指出我博客中的问题的话，请写邮件给我，我会非常感谢您的。
 
-## 开发 Development
+----------
+我的邮箱是：atlasbioin4@gmail.com
 
-NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。
+----------
 
-NexT is built for easily use with elegant appearance. First things first, always keep things simple.
+##捐赠
 
+如果你觉得我的文章对你有帮助，可以支持我一下：
+![支付宝扫码链接][1] ![微信扫码链接][2]
 
-## 捐赠
-
-支付宝捐赠链接还是要有的，万一真的有人捐呢。
-
-![支付宝扫码捐赠](http://p1.bpimg.com/567571/9a4a158daee8aa69.png)
+  [1]: https://atlasbioinfo.github.io/images/alipay.jpg
+  [2]: https://atlasbioinfo.github.io/images/weixinpay.jpg
+ 
