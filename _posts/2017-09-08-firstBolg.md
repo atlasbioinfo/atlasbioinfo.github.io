@@ -3,7 +3,7 @@ title: 万事开头难的第一篇博客!
 description: 讲述博主首创博客的心累历程-_-.
 categories:
  - tutorial
-tags:
+tags:Jekyll Markdown
 ---
 
 作为本博客的第一篇文章，就写了一下建立博客和以后要做的事情吧-_-
