@@ -13,4 +13,25 @@ categories:
 ***
 
 Tensorflow就不用简介了，谷歌的深度学习框架，也是目前最火的深度学习框架。其他的框架还有Caffe，Theano，MXNet等等。我是个小白，其他没用过，就不说了=-=，详细的大家可以看
-**[对比深度学习十大框架](https://www.oschina.net/news/80593/deep-learning-frameworks-a-review-before-finishing-2016)**
+
+***[对比深度学习十大框架：TensorFlow 并非最好？](https://www.oschina.net/news/80593/deep-learning-frameworks-a-review-before-finishing-2016)***
+
+```python
+import tensorflow as tf
+sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+```
+
+```shell
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+```
+
+```shell
+pip install --upgrade tensorflow-gpu
+```
+
+![successGPU](http://ow1kvhtif.bkt.clouddn.com/successGPUTensorflow.PNG)
+![AnacondaCuda](http://ow1kvhtif.bkt.clouddn.com/AnacondaCuda.PNG)
+![AnacondaTensor](http://ow1kvhtif.bkt.clouddn.com/anacondaTensor.PNG)
+![msgInstall](http://ow1kvhtif.bkt.clouddn.com/msgpackInstall.PNG)
