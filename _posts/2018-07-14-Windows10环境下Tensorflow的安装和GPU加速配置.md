@@ -111,8 +111,7 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 
 如果出现下图，现实GPU信息，就说明成功了：
 
-
-
+![success](http://ow1kvhtif.bkt.clouddn.com/successGPUTensorflow.PNG)
 
 ## 出现的各种问题以及修复策略 ##
 
