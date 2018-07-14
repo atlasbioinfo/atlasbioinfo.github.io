@@ -86,9 +86,15 @@ pip install --upgrade tensorflow tensorflow-gpu
 
 **[CUDA官网下载](https://developer.nvidia.com/cuda-downloads)**
 
-**[cuDNN官网下载](https://developer.nvidia.com/cudnn)**
+![CUDAdownload](http://ow1kvhtif.bkt.clouddn.com/cudaDownLoad.PNG)
 
 注意：**在安装CUDA的时候，它会检验physX和Nvidia Geforce Experence，这两个软件如果你之前安装过更高版本的，就没办法安装CUDA，需要把高版本的这两个软件卸载才行**
+
+**[cuDNN官网下载](https://developer.nvidia.com/cudnn)**
+
+![cuDNN下载](http://ow1kvhtif.bkt.clouddn.com/cuDNNdownload.PNG)
+
+注意，cuDNN下载的时候Nvidia要求注册他们的账号登陆，并填一个调查问卷，填好就可以下载了。
 
 cuDNN不需要安装，解压缩之后有一个include和一个lib64 2个文件夹。把这两个里面的东西直接复制粘贴到你安装CUDA目录里对应文件夹里就行了。这个是Windows的安装，linux似乎不是这样（以后自己试过跟大家再详细说）
 
