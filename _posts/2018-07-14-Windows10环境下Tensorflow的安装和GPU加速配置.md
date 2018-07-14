@@ -74,23 +74,67 @@ pip install --upgrade tensorflow tensorflow-gpu
 
 ## 怎么配置GPU加速 ##
 
-前面讲到需要安装tensorflow-gpu，并不是安装了这个就直接可以GPU加速了。GPU加速是依赖Nvidia的CUDA GPU加速软件包的
+前面讲到需要安装tensorflow-gpu，并不是安装了这个就直接可以GPU加速了。GPU加速是依赖Nvidia的CUDA GPU加速软件包的，所以我们需要安装CUDA GPU加速包和专门为深度学习设计的cuDNN包。
 
-## 出现的各种问题以及修复策略 ##
+差点忘了说了，为社么要用GPU加速呢？我CPU不是也可以好好运行吗？其实深度学习计算量相当大，但是每个计算量都不算太繁重。
 
+这么说吧，CPU是一个大力士，比如最新的i7 8770就可以被认为是12个大力士（6核12线程）；而GPU是小学生，但是很多，比如GTX1080Ti，就像是3584个小学生（3584个流处理器单元）。如果你让这两组人搬100个巨石，那大力士肯定厉害，小学生都被累趴了也搬不动。但是如果让这两组人去送10000封信，那很明显是小学生厉害啊，人多。而深度学习就很类似去送10000封信，大力士每次送12封，小学生每次送3000多封，肯定GPU有优势嘛！
+
+回到安装上，有一点需要注意的就是，版本问题。tensorflow并不是通识所有版本的CUDA的，目前我验证过的是1.8和1.9版本的tensorflow可以使用9.0版本的CUDA和cnDNN。低于1.8的tensorflow就不行=-=。
+
+安装就是在官网下载制定版本的CUDA和cnDNN就行了。
+
+**[CUDA官网下载](https://developer.nvidia.com/cuda-downloads)**
+
+**[cuDNN官网下载](https://developer.nvidia.com/cudnn)**
+
+注意：**在安装CUDA的时候，它会检验physX和Nvidia Geforce Experence，这两个软件如果你之前安装过更高版本的，就没办法安装CUDA，需要把高版本的这两个软件卸载才行**
+
+cuDNN不需要安装，解压缩之后有一个include和一个lib64 2个文件夹。把这两个里面的东西直接复制粘贴到你安装CUDA目录里对应文件夹里就行了。这个是Windows的安装，linux似乎不是这样（以后自己试过跟大家再详细说）
+
+其实，似乎还有一个简单的方案，就是直接在Anaconda里面安装cudatoolkit似乎就行=-=，不过每次都是安装完前两个才想到这种方法，所以不知道是不是单独用anaconda安装就可以实现。有兴趣的朋友可以试试。
+
+![AnacondaCuda](http://ow1kvhtif.bkt.clouddn.com/AnacondaCuda.PNG)
+
+如果安装好了之后，打开你运行python的IDE（我用的是PyCharm），运行下面的命令：
 
 ```python
 import tensorflow as tf
 sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 ```
 
+如果出现下图，现实GPU信息，就说明成功了：
 
+
+
+
+## 出现的各种问题以及修复策略 ##
+
+### FutureWarning: Conversion of the second argument... ###
+
+完整的报错为：
 
 ```bash
-pip install --upgrade tensorflow-gpu
+FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.from ._conv import register_converters as _register_converters
+```
+这是因为h5py包没装好，装好就行了。
+
+```bash
+pip install h5py==2.8.0rc1
 ```
 
-![successGPU](http://ow1kvhtif.bkt.clouddn.com/successGPUTensorflow.PNG)
-![AnacondaCuda](http://ow1kvhtif.bkt.clouddn.com/AnacondaCuda.PNG)
+### h5py包装不上 ###
+
+那需要安装msgpack包，同样的方法，见下图：
 
 ![msgInstall](http://ow1kvhtif.bkt.clouddn.com/msgpackInstall.PNG)
+
+### 小技巧：用迅雷加速下载 ###
+
+在你用pip install的时候下载速度可能会比较慢，这时候你可以把那个带安装包whl的下载链接复制下来，用迅雷等软件下好，之后本地安装。本地安装也很简单, 命令行切换到到那个目录，之后:
+
+```bash
+pip install ./tensorflow_1_9_0.whl
+```
+
+就好了。
