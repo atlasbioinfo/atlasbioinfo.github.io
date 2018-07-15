@@ -2,7 +2,7 @@
 layout: post
 title: Windows10环境下Tensorflow的安装和GPU加速配置
 categories:
- - 生物信息
+ - 机器学习
 ---
 
 也算折腾了好几天，终于在Windows上把Tensorflow和GPU加速配置好了，跟大家分享一下经验。目前实验室服务器上木有显卡，所以以后实验室土豪了装了显卡我再去摸索Linux怎么配置这个，估计套路差不多。
@@ -143,3 +143,11 @@ pip install ./tensorflow_1_9_0.whl
 ```
 
 就好了。
+
+### 简单的模型CPU似乎更快 ###
+
+楼主用一个简单的序列模型进行测试（5层32unit全连接），发现CPU比GPU快4倍多！
+
+这个是用GPU计算时的占用图：
+
+![博主简介](http://ow1kvhtif.bkt.clouddn.com/%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8logo.png)
