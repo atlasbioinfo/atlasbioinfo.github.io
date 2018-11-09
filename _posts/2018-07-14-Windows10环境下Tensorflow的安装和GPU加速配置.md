@@ -22,7 +22,7 @@ Tensorflow更新的好快，在年初我开始学的时候是1.1版本，现在�
 
 最近的新版本很多大佬都说好，因为对新人很友好，除了很多高级API（就是用更少的代码实现功能），1.9版本还加入了对keras的直接支持。
 
-![tensorflowLogo](http://ow1kvhtif.bkt.clouddn.com/tensorflowLogo.jpg)
+![tensorflowLogo](http://pic.atlasbioinfo.com/tensorflowLogo.jpg)
 
 安装Tensorflow最简单的方法有2种：
 1. Anaconda和Conda 
@@ -36,7 +36,7 @@ Anaconda是一个python的包管理器，里面有大多数数据处理的包还
 
 安装好之后，windows用户可以直接点Anaconda Navigator进入这个界面，点Enviroments，之后需要安装哪个就点哪个就好了，最后点apply就安装了。
 
-![AnacondaTensor](http://ow1kvhtif.bkt.clouddn.com/anacondaTensor.PNG)
+![AnacondaTensor](http://pic.atlasbioinfo.com/anacondaTensor.PNG)
 
 或者，直接cmd启动命令行终端，或者打开windows10特有的Windows PowerShell，输入：
 
@@ -86,13 +86,13 @@ pip install --upgrade tensorflow tensorflow-gpu
 
 **[CUDA官网下载](https://developer.nvidia.com/cuda-downloads)**
 
-![CUDAdownload](http://ow1kvhtif.bkt.clouddn.com/cudaDownLoad.PNG)
+![CUDAdownload](http://pic.atlasbioinfo.com/cudaDownLoad.PNG)
 
 注意：**在安装CUDA的时候，它会检验physX和Nvidia Geforce Experence，这两个软件如果你之前安装过更高版本的，就没办法安装CUDA，需要把高版本的这两个软件卸载才行**
 
 **[cuDNN官网下载](https://developer.nvidia.com/cudnn)**
 
-![cuDNN下载](http://ow1kvhtif.bkt.clouddn.com/cuDNNdownload.PNG)
+![cuDNN下载](http://pic.atlasbioinfo.com/cuDNNdownload.PNG)
 
 注意，cuDNN下载的时候Nvidia要求注册他们的账号登陆，并填一个调查问卷，填好就可以下载了。
 
@@ -100,7 +100,7 @@ cuDNN不需要安装，解压缩之后有一个include和一个lib64 2个文件�
 
 其实，似乎还有一个简单的方案，就是直接在Anaconda里面安装cudatoolkit似乎就行=-=，不过每次都是安装完前两个才想到这种方法，所以不知道是不是单独用anaconda安装就可以实现。有兴趣的朋友可以试试。
 
-![AnacondaCuda](http://ow1kvhtif.bkt.clouddn.com/AnacondaCuda.PNG)
+![AnacondaCuda](http://pic.atlasbioinfo.com/AnacondaCuda.PNG)
 
 如果安装好了之后，打开你运行python的IDE（我用的是PyCharm），运行下面的命令：
 
@@ -111,7 +111,7 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 
 如果出现下图，现实GPU信息，就说明成功了：
 
-![success](http://ow1kvhtif.bkt.clouddn.com/successGPUTensorflow.PNG)
+![success](http://pic.atlasbioinfo.com/successGPUTensorflow.PNG)
 
 ## 出现的各种问题以及修复策略 ##
 
@@ -132,7 +132,7 @@ pip install h5py==2.8.0rc1
 
 那需要安装msgpack包，同样的方法，见下图：
 
-![msgInstall](http://ow1kvhtif.bkt.clouddn.com/msgpackInstall.PNG)
+![msgInstall](http://pic.atlasbioinfo.com/msgpackInstall.PNG)
 
 ### 小技巧：用迅雷加速下载 ###
 
@@ -150,4 +150,4 @@ pip install ./tensorflow_1_9_0.whl
 
 这个是用GPU计算时的占用图：
 
-![博主简介](http://ow1kvhtif.bkt.clouddn.com/%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8logo.png)
+![博主简介](http://pic.atlasbioinfo.com/%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8logo.png)
