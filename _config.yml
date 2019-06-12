@@ -21,12 +21,12 @@ permalink: pretty
 # Pagination
 paginate: 3
 paginate_path: "/page:num/"
-  archive:
-    paginate: 10
-    paginate_path: "/page:num/"
-  category:
-    paginate: 10
-    paginate_path: "/page:num/"
+# archive:
+#  paginate: 10
+#  paginate_path: "/page:num/"
+# category:
+#  paginate: 10
+#  paginate_path: "/page:num/"
 #tag:
   #paginate: 10
   #paginate_path: "/page:num/"
