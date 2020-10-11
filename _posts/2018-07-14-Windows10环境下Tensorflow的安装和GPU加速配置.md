@@ -150,4 +150,4 @@ pip install ./tensorflow_1_9_0.whl
 
 这个是用GPU计算时的占用图：
 
-![博主简介](http://pic.atlasbioinfo.com/%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8logo.png)
+![博主简介](https://atlasbioinfo.github.io/images/logo.png)

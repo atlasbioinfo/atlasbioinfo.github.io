@@ -409,4 +409,4 @@ for index in range(1,len(file_arr)):
 
 希望大家有所收获，欢迎与我交流。
 
-![博主简介](http://pic.atlasbioinfo.com/%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8logo.png)
+![博主简介](https://atlasbioinfo.github.io/images/logo.png)

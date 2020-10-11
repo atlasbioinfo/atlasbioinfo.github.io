@@ -153,4 +153,4 @@ print (timeEnd-timeBeg)
 
 突然发现像我这种数据，量不大的，做深度学习，完全可以全部加载去找最优值啊~
 
-![博主简介](http://pic.atlasbioinfo.com/%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8logo.png)
+![博主简介](https://atlasbioinfo.github.io/images/logo.png)
