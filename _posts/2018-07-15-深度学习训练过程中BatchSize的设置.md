@@ -84,11 +84,11 @@ Epoch定50次，改变不同的Batch Size。
 
 这个是CPU运行情况：
 
-![CPURun](http://pic.atlasbioinfo.com/CPURun.PNG)
+![CPURun](https://pic.atlasbioinfo.com/CPURun.PNG)
 
 这个是GPU运行情况：
 
-![GPURun](http://pic.atlasbioinfo.com/GPURun.PNG)
+![GPURun](https://pic.atlasbioinfo.com/GPURun.PNG)
 
 其实，感叹一下，GPU加速还是对CNN效果更明显，我这个模型和数据量对GTX1060来说还是有点弱。
 
@@ -113,7 +113,7 @@ print (timeEnd-timeBeg)
 
 做个折线图：
 
-![GPUCPUSpeed](http://pic.atlasbioinfo.com/GPUCPUSpeed.png)
+![GPUCPUSpeed](https://pic.atlasbioinfo.com/GPUCPUSpeed.png)
 
 可以看到，Size为100时，CPU的效率时GPU的4倍，而Size为总数据量时，GPU效率是CPU的2倍。
 
